@@ -1,1 +1,4 @@
 .vm
+.pyc
+*.pyc
+*.vm
