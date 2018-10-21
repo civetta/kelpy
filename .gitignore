@@ -2,4 +2,4 @@
 .pyc
 *.pyc
 *.vm
-/Lib
+\Lib\*
