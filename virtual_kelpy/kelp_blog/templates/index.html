@@ -1,0 +1,13 @@
+<html>
+<head><img src="/static/ph_banner2.png"></head>
+<body>
+<br>
+    {% for row in rows %}
+<br>
+<h1>{{row["post_title"]}}</h1>
+{{row["post_content"]}}
+<br>
+<br>
+<br>
+         {% endfor %}
+</body></html>

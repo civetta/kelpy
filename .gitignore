@@ -1,0 +1,6 @@
+.vm
+.pyc
+*.pyc
+*.vm
+Lib/
+Sripts/
