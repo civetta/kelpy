@@ -2,4 +2,5 @@
 .pyc
 *.pyc
 *.vm
-/Lib/*
+Lib/
+Sripts/
