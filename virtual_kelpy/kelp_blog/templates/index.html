@@ -4,9 +4,9 @@
 <br>
     {% for row in rows %}
 <br>
-<h1>{{row["post_title"]}}</h1>
-{{row["post_content"]}}
-<br>
+<h1>{{row["post_content"]}}</h1>
+{{row["post_title"]}}
+{{row['id']}}
 <br>
 <br>
          {% endfor %}
