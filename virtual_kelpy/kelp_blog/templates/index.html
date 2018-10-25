@@ -4,10 +4,18 @@
 <br>
     {% for row in rows %}
 <br>
-<h1>{{row["post_content"]}}</h1>
-{{row["post_title"]}}
+<h1><a href={{ url_for('blog_post', var_post_title=row["post_title"]) }}>{{row["post_title"]}}</a></p></h1>
+{{row["post_content"]}}
 {{row['id']}}
 <br>
 <br>
          {% endfor %}
+{% if current_page-1>0 %}
+    <a href={{ url_for('split_posts', var_page_num=current_page-1) }}>Newer</a></p>
+    
+{% endif %}
+
+{% if current_page+1<=max_page%}
+    <a href={{ url_for('split_posts', var_page_num=current_page+1) }}>Older</a></p>
+{% endif %}
 </body></html>
